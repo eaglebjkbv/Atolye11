@@ -1,0 +1,7 @@
+D:\bv\Atp11A\OrtalamaBul2\OrtalamaBul2\bin\Debug\OrtalamaBul2.exe.config
+D:\bv\Atp11A\OrtalamaBul2\OrtalamaBul2\bin\Debug\OrtalamaBul2.exe
+D:\bv\Atp11A\OrtalamaBul2\OrtalamaBul2\bin\Debug\OrtalamaBul2.pdb
+D:\bv\Atp11A\OrtalamaBul2\OrtalamaBul2\obj\Debug\OrtalamaBul2.csproj.CoreCompileInputs.cache
+D:\bv\Atp11A\OrtalamaBul2\OrtalamaBul2\obj\Debug\OrtalamaBul2.exe
+D:\bv\Atp11A\OrtalamaBul2\OrtalamaBul2\obj\Debug\OrtalamaBul2.pdb
+D:\bv\Atp11A\OrtalamaBul2\OrtalamaBul2\obj\Debug\OrtalamaBul2.csprojAssemblyReference.cache

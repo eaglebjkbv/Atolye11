@@ -1,0 +1,15 @@
+D:\bv\Atp11A\MerhabaDunya\MerhabaDunya\bin\Debug\net6.0\MerhabaDunya.exe
+D:\bv\Atp11A\MerhabaDunya\MerhabaDunya\bin\Debug\net6.0\MerhabaDunya.deps.json
+D:\bv\Atp11A\MerhabaDunya\MerhabaDunya\bin\Debug\net6.0\MerhabaDunya.runtimeconfig.json
+D:\bv\Atp11A\MerhabaDunya\MerhabaDunya\bin\Debug\net6.0\MerhabaDunya.dll
+D:\bv\Atp11A\MerhabaDunya\MerhabaDunya\bin\Debug\net6.0\MerhabaDunya.pdb
+D:\bv\Atp11A\MerhabaDunya\MerhabaDunya\obj\Debug\net6.0\MerhabaDunya.csproj.AssemblyReference.cache
+D:\bv\Atp11A\MerhabaDunya\MerhabaDunya\obj\Debug\net6.0\MerhabaDunya.GeneratedMSBuildEditorConfig.editorconfig
+D:\bv\Atp11A\MerhabaDunya\MerhabaDunya\obj\Debug\net6.0\MerhabaDunya.AssemblyInfoInputs.cache
+D:\bv\Atp11A\MerhabaDunya\MerhabaDunya\obj\Debug\net6.0\MerhabaDunya.AssemblyInfo.cs
+D:\bv\Atp11A\MerhabaDunya\MerhabaDunya\obj\Debug\net6.0\MerhabaDunya.csproj.CoreCompileInputs.cache
+D:\bv\Atp11A\MerhabaDunya\MerhabaDunya\obj\Debug\net6.0\MerhabaDunya.dll
+D:\bv\Atp11A\MerhabaDunya\MerhabaDunya\obj\Debug\net6.0\refint\MerhabaDunya.dll
+D:\bv\Atp11A\MerhabaDunya\MerhabaDunya\obj\Debug\net6.0\MerhabaDunya.pdb
+D:\bv\Atp11A\MerhabaDunya\MerhabaDunya\obj\Debug\net6.0\MerhabaDunya.genruntimeconfig.cache
+D:\bv\Atp11A\MerhabaDunya\MerhabaDunya\obj\Debug\net6.0\ref\MerhabaDunya.dll

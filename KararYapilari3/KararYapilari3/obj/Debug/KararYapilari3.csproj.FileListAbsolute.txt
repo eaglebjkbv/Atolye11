@@ -1,0 +1,7 @@
+D:\bv\Atp11A\KararYapilari3\KararYapilari3\bin\Debug\KararYapilari3.exe.config
+D:\bv\Atp11A\KararYapilari3\KararYapilari3\bin\Debug\KararYapilari3.exe
+D:\bv\Atp11A\KararYapilari3\KararYapilari3\bin\Debug\KararYapilari3.pdb
+D:\bv\Atp11A\KararYapilari3\KararYapilari3\obj\Debug\KararYapilari3.csprojAssemblyReference.cache
+D:\bv\Atp11A\KararYapilari3\KararYapilari3\obj\Debug\KararYapilari3.csproj.CoreCompileInputs.cache
+D:\bv\Atp11A\KararYapilari3\KararYapilari3\obj\Debug\KararYapilari3.exe
+D:\bv\Atp11A\KararYapilari3\KararYapilari3\obj\Debug\KararYapilari3.pdb

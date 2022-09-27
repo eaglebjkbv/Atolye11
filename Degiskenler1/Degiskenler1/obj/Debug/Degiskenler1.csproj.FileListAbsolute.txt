@@ -1,0 +1,7 @@
+D:\bv\Atp11A\Degiskenler1\Degiskenler1\obj\Debug\Degiskenler1.csprojAssemblyReference.cache
+D:\bv\Atp11A\Degiskenler1\Degiskenler1\obj\Debug\Degiskenler1.csproj.CoreCompileInputs.cache
+D:\bv\Atp11A\Degiskenler1\Degiskenler1\bin\Debug\Degiskenler1.exe.config
+D:\bv\Atp11A\Degiskenler1\Degiskenler1\bin\Debug\Degiskenler1.exe
+D:\bv\Atp11A\Degiskenler1\Degiskenler1\bin\Debug\Degiskenler1.pdb
+D:\bv\Atp11A\Degiskenler1\Degiskenler1\obj\Debug\Degiskenler1.exe
+D:\bv\Atp11A\Degiskenler1\Degiskenler1\obj\Debug\Degiskenler1.pdb

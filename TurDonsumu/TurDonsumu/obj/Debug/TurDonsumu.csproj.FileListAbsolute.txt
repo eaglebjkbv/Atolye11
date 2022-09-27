@@ -1,0 +1,7 @@
+D:\bv\Atp11A\TurDonsumu\TurDonsumu\bin\Debug\TurDonsumu.exe.config
+D:\bv\Atp11A\TurDonsumu\TurDonsumu\bin\Debug\TurDonsumu.exe
+D:\bv\Atp11A\TurDonsumu\TurDonsumu\bin\Debug\TurDonsumu.pdb
+D:\bv\Atp11A\TurDonsumu\TurDonsumu\obj\Debug\TurDonsumu.csproj.CoreCompileInputs.cache
+D:\bv\Atp11A\TurDonsumu\TurDonsumu\obj\Debug\TurDonsumu.exe
+D:\bv\Atp11A\TurDonsumu\TurDonsumu\obj\Debug\TurDonsumu.pdb
+D:\bv\Atp11A\TurDonsumu\TurDonsumu\obj\Debug\TurDonsumu.csprojAssemblyReference.cache
