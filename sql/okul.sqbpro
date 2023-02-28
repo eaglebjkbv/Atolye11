@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="D:/bv/Atp11A/sql/okul.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="2"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="945"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="4,7:mainogrenci"/><default_encoding codec=""/><browse_table_settings><table schema="main" name="iletisim" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="40"/><column index="2" value="77"/><column index="3" value="41"/><column index="4" value="47"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="ogrenci" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="73"/><column index="2" value="169"/><column index="3" value="157"/><column index="4" value="211"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table></browse_table_settings></tab_browse><tab_sql><sql name="SQL 1">UPDATE ogrenci set ad=&quot;Emre&quot; WHERE num=152;
+SELECT * FROM ogrenci;
+-- DELETE FROM ogrenci WHERE num=234
+
+-- SELECT * FROM ogrenci
+
+-- SELECT * FROM ogrenci,iletisim WHERE ogrenci.num=iletisim.num AND ogrenci.num&gt;150
+-- INSERT INTO iletisim VALUES (145,&quot;507877785&quot;,&quot;2323434343&quot;,&quot;5044445551&quot;)
+
+-- INSERT INTO ogrenci VALUES(234,&quot;Yavuz&quot;,&quot;Uymaz&quot;,&quot;433434343&quot;)
+-- SELECT * FROM ogrenci ORDER BY ad,soyad ASC
+-- SELECT AVG(num) as &quot;Ortalama&quot; FROM ogrenci
+-- SELECT MIN(num),* FROM ogrenci 
+-- SELECT MAX(ad) FROM ogrenci 
+-- SELECT * FROM ogrenci WHERE soyad LIKE &quot;%u&quot;
+-- SELECT count(*) FROM ogrenci 
+-- WHERE num BETWEEN 100 and 150
+-- SELECT * FROM ogrenci WHERE num BETWEEN 100 and 150
+-- SELECT * FROM ogrenci WHERE num&gt;100 and num&lt;150 
+-- SELECT ad,soyad FROM ogrenci
+-- SELECT * FROM ogrenci</sql><current_tab id="0"/></tab_sql></sqlb_project>
