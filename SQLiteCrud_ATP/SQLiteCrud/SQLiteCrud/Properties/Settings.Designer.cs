@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SQLiteCRUD.Properties
+namespace SQLiteCrud.Properties
 {
 
 

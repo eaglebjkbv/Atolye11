@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SQLite;
 
-namespace SQLiteCrud
+namespace SQLiteCRUD
 {
     public partial class Form1 : Form
     {
@@ -20,16 +20,14 @@ namespace SQLiteCrud
         private void listele()
         {
             SQLiteConnection baglanti = 
-                new SQLiteConnection("Data Source=D:\\bv\\Atp11A\\sql\\okul2.db;version=3");
+                new SQLiteConnection("Data Source=D:\\bv\\Amp11A\\SQL\\okul2.db;version=3");
             baglanti.Open();
-            SQLiteDataAdapter adaptor = 
+            SQLiteDataAdapter da = 
                 new SQLiteDataAdapter("SELECT * FROM ogrenci",baglanti);
-            DataSet dataSet = new DataSet();
-            adaptor.Fill(dataSet, "ogrenci");
-            dataGridView1.DataSource = dataSet.Tables["ogrenci"];
+            DataSet ds = new DataSet();
+            da.Fill(ds, "ogrenci");
+            dataGridView1.DataSource = ds.Tables["ogrenci"];
             baglanti.Close();
-
-
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -39,144 +37,114 @@ namespace SQLiteCrud
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string num = textBox1.Text;
-            string ad = textBox2.Text;
-            string soyad = textBox3.Text;
-            string dtarih = textBox5.Text;
-            string cinsiyet;
-            if (radioButton1.Checked == true)
-            {
-                cinsiyet = "E";
-            }else
-            {
-                cinsiyet = "K";
-            }
             try
-            {        
+            {
                 SQLiteConnection baglanti =
-                    new SQLiteConnection("Data Source=D:\\bv\\Atp11A\\sql\\okul2.db;version=3");
+                    new SQLiteConnection("Data Source=D:\\bv\\Amp11A\\SQL\\okul2.db;version=3");
                 baglanti.Open();
                 SQLiteCommand komut = new SQLiteCommand();
                 komut.Connection = baglanti;
-                komut.CommandText = "INSERT INTO " +
-                    "ogrenci VALUES('"+num+"','"+ad+"','"+soyad+"','"+cinsiyet+"','"+dtarih+"')";
+                komut.CommandText =
+                    "INSERT INTO ogrenci VALUES('" + textBox1.Text + "','" +
+                    textBox2.Text + "','" + textBox3.Text + "','" + textBox4.Text + "')";
                 komut.ExecuteNonQuery();
-                listele();
-                baglanti.Close();  
+                baglanti.Close();
+                listele();  
             }
             catch(Exception ex)
             {
-                MessageBox.Show("Hata :" + ex.Message);
+                MessageBox.Show("HATA " + ex.Message);
             }
-            textBox1.Clear();
-            textBox2.Clear();
-            textBox3.Clear();
-            textBox5.Clear();
+            textBox1.Text = "";
+            textBox2.Text = "";
+            textBox3.Text = "";
+            textBox4.Text = "";
         }
-
         private void button2_Click(object sender, EventArgs e)
-        {
+        { 
             try
             {
-                string num = textBox4.Text;
                 SQLiteConnection baglanti =
-                    new SQLiteConnection("Data Source=D:\\bv\\Atp11A\\sql\\okul2.db;version=3");
+                    new SQLiteConnection("Data Source=D:\\bv\\Amp11A\\SQL\\okul2.db;version=3");
                 baglanti.Open();
                 SQLiteCommand komut = new SQLiteCommand();
                 komut.Connection = baglanti;
-                komut.CommandText = "DELETE FROM ogrenci WHERE num='"+num+"'";
+                komut.CommandText = 
+                    "DELETE FROM ogrenci WHERE numara='"+textBox5.Text+"'";
                 komut.ExecuteNonQuery();
-                listele();
                 baglanti.Close();
+                listele();
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Hata : " + ex.Message);
+                MessageBox.Show("HATA : " + ex.Message);
             }
+            finally
+            {
+                textBox5.Clear();
+            }
+        }
+        private void button4_Click(object sender, EventArgs e)
+        {
+            SQLiteConnection baglanti =
+                new SQLiteConnection("Data Source=D:\\bv\\Amp11A\\SQL\\okul2.db;version=3");
+            baglanti.Open();
+            SQLiteCommand komut = 
+                new SQLiteCommand("SELECT * FROM ogrenci " +
+                "WHERE numara='"+textBox1.Text+"'",baglanti);
+            SQLiteDataReader reader = komut.ExecuteReader();
+            if (reader.HasRows==true)
+            {
+                reader.Read();
+                textBox2.Text = reader["ad"].ToString();
+                textBox3.Text = reader["soyad"].ToString();
+                textBox4.Text = reader["yas"].ToString();
+            }
+            else
+            {
+                MessageBox.Show("Veri Bulunamadı");
+            }
+            reader.Close();
+            baglanti.Close();
+
+
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             try
             {
-                string num = textBox10.Text;
+                string ad = textBox2.Text;
+                string soyad = textBox3.Text;
+                string yas = textBox4.Text;
                 SQLiteConnection baglanti =
-                    new SQLiteConnection("Data Source=D:\\bv\\Atp11A\\sql\\okul2.db;version=3");
+                    new SQLiteConnection("Data Source=D:\\bv\\Amp11A\\SQL\\okul2.db;version=3");
                 baglanti.Open();
                 SQLiteCommand komut = new SQLiteCommand();
                 komut.Connection = baglanti;
-                komut.CommandText = "SELECT * FROM ogrenci WHERE num='" + num + "'";
-                SQLiteDataReader okuyucu = komut.ExecuteReader();
-                okuyucu.Read();
-                textBox1.Text=okuyucu["num"].ToString().Trim();
-                textBox2.Text = okuyucu["ad"].ToString().Trim();
-                textBox3.Text = okuyucu["soyad"].ToString().Trim();
-                textBox5.Text = okuyucu["dtarih"].ToString().Trim();
-                if (okuyucu["cinsiyet"].ToString() == "E")
-                {
-                    
-                    radioButton1.Checked = true;
-                    
-                }
-                else
-                {
-                    radioButton2.Checked = true;
-                }
-                okuyucu.Close();
-                baglanti.Close();
 
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Hata : " + ex.Message);
-
-            }
-            
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            string num = textBox10.Text;
-            string ad = textBox2.Text;
-            string soyad = textBox3.Text;
-            string dtarih = textBox5.Text;
-            string cinsiyet;
-            if (radioButton1.Checked == true)
-            {
-                cinsiyet = "E";
-            }
-            else
-            {
-                cinsiyet = "K";
-            }
-            try
-            {
-                SQLiteConnection baglanti = new SQLiteConnection("Data Source=D:\\bv\\Atp11A\\sql\\okul2.db;version=3");
-                baglanti.Open();
-                SQLiteCommand komut = new SQLiteCommand();
-                komut.Connection = baglanti;
-         
-                komut.CommandText = "UPDATE ogrenci SET ad = '" + ad + "',soyad = '" + soyad + "'" +
-                    ",cinsiyet='"+cinsiyet+ "', dtarih='" + dtarih + "' WHERE num = '" + num + "'";
-                komut.Prepare();
-                komut.Parameters.AddWithValue("@C", ad);
-                komut.Parameters.AddWithValue("@A", soyad);
-                komut.Parameters.AddWithValue("@L", cinsiyet);
-                komut.Parameters.AddWithValue("@I", num);
-                    
+                komut.CommandText =
+                    "UPDATE ogrenci SET ad='"+ad+"', soyad='"+soyad+"',yas='"+yas+"' " +
+                    "WHERE numara='"+textBox1.Text+"'";
+               
+                
                 komut.ExecuteNonQuery();
-                textBox1.Clear();
-                textBox2.Clear();
-                textBox3.Clear();
-                textBox5.Clear();
+                baglanti.Close();
                 listele();
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show("HATA " + ex.Message);
             }
-            
-            
+            textBox1.Text = "";
+            textBox2.Text = "";
+            textBox3.Text = "";
+            textBox4.Text = "";
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

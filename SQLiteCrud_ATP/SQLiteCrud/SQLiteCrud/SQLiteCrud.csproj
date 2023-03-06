@@ -5,10 +5,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{FF314BB2-8985-48E6-8A0F-B42103C8E07F}</ProjectGuid>
+    <ProjectGuid>{AC53D4B3-9C47-4A4E-958C-C6D0C646C36A}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>SQLiteCRUD</RootNamespace>
-    <AssemblyName>SQLiteCRUD</AssemblyName>
+    <RootNamespace>SQLiteCrud</RootNamespace>
+    <AssemblyName>SQLiteCrud</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
